@@ -131,7 +131,7 @@ p.notebook img {
   height: 343px;
 }
 .circle {
-  width: 66px;
+  width: 76px;
   margin: 22px auto;
 }
 .circle a:first-child {
@@ -185,9 +185,33 @@ p.notebook img {
   font-weight: 400;
   line-height: 45px;
 }
-.font::before {
+.working:hover:before {
+  content: "";
+  color: #f6772c;
+}
+.font:hover:before {
   content: "";
   color: #f6772c;
+}
+.friendly:hover:before {
+  content: "";
+  color: #f6772c;
+}
+.design:hover:before {
+  content: "";
+  color: #f6772c;
+}
+.retina:hover:before {
+  content: "";
+  color: #f6772c;
+}
+.flat:hover:before {
+  content: "";
+  color: #f6772c;
+}
+.font::before {
+  content: "";
+  color: #709dca;
   margin-right: 37px;
 }
 .working::before {
@@ -458,7 +482,7 @@ p.notebook img {
   color: #394b50;
   line-height: 29px;
   text-align: center;
-  margin-bottom: 105px;
+  margin-bottom: 55px;
 }
 .how-it h2 {
   font-family: Gotham;
@@ -472,6 +496,11 @@ p.notebook img {
   font-weight: 300;
 }
 .foursteps {
+  padding-top: 50px;
+  box-sizing: border-box;
+  background-image: url(../img/arrow-d.png), url(../img/arrow-u.png), url(../img/arrow-d.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 226px 15px, 510px 109px, 816px 15px;
   font-size: 0;
   text-align: center;
 }
