@@ -80,14 +80,18 @@
 }
 .in-put  {
 	input {
+		margin-right: 7px;
+		vertical-align: middle;
 		outline: none;
 		width: 281px;
-		height: 46px;
+		height: 44px;
 		border-radius: 2px;
 		background-color: #ffffff;
 		color: #a9a9a9;
 		font-family: "Open Sans";
-		border: 1px solid #cbcbcb;
+		padding-left: 20px;
+		border: none; 
+		border-radius: 2px;
 		}
 	.button-start {
 		min-width: 211px;
@@ -96,49 +100,51 @@
 		border-radius: 2px;
 		background-color: #ffbb42;
 		}
+	button {
+		min-width: 211px;
+		height: 46px;
+		border-radius: 2px;
+		background-color: #ffbb42;
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+		border: 0;
+		padding: 0;
+		vertical-align: bottom;
+	}	
 }
-input[type="name"] {
+input[type="text"] {
 	font-family: "Font Awesome";
 	color: #6e6e6e;
 	font-size: 17px;
 	font-weight: 400;
 }
-input[type="mail"] {
+input[type="tel"] {
 	font-family: "Font Awesome";
 	color: #6e6e6e;
 	font-size: 17px;
 	font-weight: 400;
-}
-input[type="phone"] {
-	font-family: "Font Awesome";
-	color: #6e6e6e;
-	font-size: 17px;
-	font-weight: 400;
-}
-p.notebook img {
-	margin-top: 67px;
-	position: relative;
 }
 .notebook {
-	text-align: center;
-	margin-right: 97px;
+	background-image: url(../img/notebook.png);
+	background-repeat: no-repeat;
+	background-position: center 67px;
+	position: relative;
+	height: 433px;
 }
-.people {
-	top: -62px;
-	width: 445px;
-	height: 264px;
-	margin-left: -548px;
-}
-.note {
-	top: 0;
-	width: 647px;
-	height: 343px;
+.notebook img {
+	position: absolute;
+	left: 50%;
+	margin-left: -221px;
+	margin-top: 85px;
 }
 .circle {
 	width: 76px;
-	margin: 22px auto;
+	margin: 0 auto;
 }
-.circle a:first-child {
+.circle a:hover {
 	width: 15px;
 	height: 15px;
 	border: 2px solid #1ca8dd;
@@ -655,17 +661,17 @@ p.notebook img {
 	}
 	.in-put {
 		margin-top: 38px;
-		.inputname[type="name"] {
-		font-family: "Font Awesome";
-		color: #6e6e6e;
-		font-size: 17px;
-		font-weight: 400;
+		.inputname[type="text"] {
+			font-family: "Font Awesome";
+			color: #6e6e6e;
+			font-size: 17px;
+			font-weight: 400;
 		}
-		.inputmail[type="mail"] {
-		font-family: "Font Awesome";
-		color: #6e6e6e;
-		font-size: 17px;
-		font-weight: 400;
+		.inputmail[type="text"] {
+			font-family: "Font Awesome";
+			color: #6e6e6e;
+			font-size: 17px;
+			font-weight: 400;
 		}
 		.inputname {
 			width: 308px;
@@ -674,7 +680,7 @@ p.notebook img {
 			background-color: #ffffff;
 			color: #a9a9a9;
 			font-family: "Open Sans";
-			border: 1px solid #cbcbcb
+			border: 1px solid #cbcbcb;
 		}
 		.inputmail {
 			width: 388px;
@@ -685,10 +691,19 @@ p.notebook img {
 			font-family: "Open Sans";
 			border: 1px solid #cbcbcb;
 		}
-		.button-start {
-			padding-top: 19px;
-		    height: 52px;
+		.subscribe {
 			min-width: 218px;
+			height: 50px;
+			border-radius: 2px 1px 1px 2px;
+			background-color: #ffbb42;
+			color: #ffffff;
+			font-family: "Open Sans";
+			font-size: 14px;
+			font-weight: 400;
+			text-transform: uppercase;
+			border: 0;
+			padding: 0;
+			vertical-align: middle;
 		}
 	}
 }
@@ -774,16 +789,11 @@ footer {
 			color: #394b50;
 			font-family: "Font Awesome";
 			font-size: 20px;
-			font-weight: 400;
 			text-transform: uppercase;
 		}
 	}
-	div a:first-child {
+	div a:hover {
 		color: #ffc155;
-		font-family: "Font Awesome";
-		font-size: 18px;
-		font-weight: 400;
-		line-height: 25px;
 	}
 	div {
 		margin-top: 23px;
